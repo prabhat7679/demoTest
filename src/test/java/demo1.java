@@ -23,12 +23,15 @@ public  void test1() throws InterruptedException {
     Thread.sleep(1000);
     driver.manage().window().maximize();
     Thread.sleep(1000);
+    System.out.println("login successful");
 
 }
     @Test(priority = 2)
     public  void test2(){
       driver.findElement(By.xpath("//textarea[@id='APjFqb']")).sendKeys("jenkins");
-        driver.findElement(By.xpath("//textarea[@id='APjFqb']")).sendKeys(Keys.ENTER);
+
+      driver.findElement(By.xpath("//textarea[@id='APjFqb']")).sendKeys(Keys.ENTER);
+        System.out.println("search jenkins");
     }
 
 
